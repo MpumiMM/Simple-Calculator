@@ -1,0 +1,68 @@
+body {
+    background-color: #f0f0f0; /* Grey background */
+  }
+
+  p { text-align: center;
+       font-size: 50px;
+       
+       
+
+  }
+
+  .calculator {
+    background-color: #000; /* Black calculator background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    background-color: #fff; /* White display background */
+    color: #000; /* Black display text */
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .buttons button {
+    width: 50px;
+    height: 50px;
+    background-color: #000; /* Black button background */
+    color: #fff; /* White button text */
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .buttons button.operator {
+    background-color: orange; /* Orange operator buttons */
+  }
+
+  .buttons button.operator:hover {
+    background-color: #ff8c00; /* Lighter orange on hover */
+  }
+
+  /* Additional styling for division, multiplication, and subtraction */
+  .buttons button.operator.divide,
+  .buttons button.operator.multiply,
+  .buttons button.operator.subtract {
+    background-color: orange !important; /* Change the color to orange */
+  }
+
+  /* Additional styling for AC, +/-, and % buttons */
+  .buttons button.clear {
+    background-color: #d3d3d3; /* Light grey background */
+  }
